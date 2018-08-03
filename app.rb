@@ -5,13 +5,16 @@ module FormsLab
 
     get "/" do 
       
-      erb :new 
+      erb :root 
       
     end 
     
+    get "/new"
+      erb :pirates/new
+    
     post "/show" do 
       
-      erb :show
+      erb :pirates/show
     end 
 
   end
